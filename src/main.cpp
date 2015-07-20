@@ -8,7 +8,7 @@ using namespace std;
 //#define TEST_SWITCH
 
 int main(int argc, char **argv) {
-#ifndef TEST_SWITCH
+#ifdef TEST_SWITCH
     NumberOffGame game({3, 5, 7});
     std::cout << game.Run();
     return 0;
