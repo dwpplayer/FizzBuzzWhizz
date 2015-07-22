@@ -23,13 +23,6 @@ void TestFizzBuzzWhizzSpec::SetUp() {
 }
 
 
-TEST_F(TestFizzBuzzWhizzSpec, should_input_three_different_special_numbers)
-{
-//    EXPECT_CALL(*mockLightSystem, LightOn()).Times(1);
-//
-//    car->Light();
-}
-
 TEST_F(TestFizzBuzzWhizzSpec, should_return_fizz_when_the_number_contain_the_first_digit)
 {
     ASSERT_EQ("Fizz", game->TurnNumber(13));
@@ -69,20 +62,20 @@ TEST_F(TestFizzBuzzWhizzSpec, should_return_fizzbuzz_when_the_number_is_multiple
 }
 
 
-TEST_F(TestFizzBuzzWhizzSpec, should_return_fizzbuzz_when_the_number_is_multiple_times_of_special_digits_first_and_third)
+TEST_F(TestFizzBuzzWhizzSpec, should_return_FizzWhizz_when_the_number_is_multiple_times_of_special_digits_first_and_third)
 {
     ASSERT_EQ("FizzWhizz", game->TurnNumber(21));
     ASSERT_EQ("FizzWhizz", game->TurnNumber(42));
 }
 
-TEST_F(TestFizzBuzzWhizzSpec, should_return_fizzbuzz_when_the_number_is_multiple_times_of_special_digits_second_and_third)
+TEST_F(TestFizzBuzzWhizzSpec, should_return_BuzzWhizz_when_the_number_is_multiple_times_of_special_digits_second_and_third)
 {
     ASSERT_EQ("BuzzWhizz", game->TurnNumber(70));
     ASSERT_EQ("BuzzWhizz", game->TurnNumber(140));
 }
 
 
-TEST_F(TestFizzBuzzWhizzSpec, should_return_fizzbuzz_when_the_number_is_multiple_times_of_all_special_digits)
+TEST_F(TestFizzBuzzWhizzSpec, should_return_FizzBuzzWhizz_when_the_number_is_multiple_times_of_all_special_digits)
 {
     ASSERT_EQ("FizzBuzzWhizz", game->TurnNumber(210));
     ASSERT_EQ("FizzBuzzWhizz", game->TurnNumber(2100));
